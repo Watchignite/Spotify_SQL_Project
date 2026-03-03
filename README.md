@@ -238,8 +238,8 @@ To improve query performance, we carried out the following optimization process:
 - **Advanced Querying**: Dive deeper into query optimization and explore the performance of SQL queries on larger datasets.
 
 ---
-##✅ Findings & Conclusion
-###📌 Findings
+## ✅ Findings & Conclusion
+### 📌 Findings
 1. Track Performance Insights <br>
 Several tracks crossed 1 billion+ streams, indicating highly viral and globally popular songs. <br>
 The top energy tracks are clustered mostly within electronic/pop genres, showing a positive correlation between energy and popularity. <br>
@@ -274,7 +274,7 @@ Execution time dropped to 0.153 ms, showing a ~45x performance improvement <br>
 This confirms the effectiveness of indexing for filtering workloads. <br>
 
 ---
-###📌 Conclusion
+### 📌 Conclusion
 The Spotify SQL project demonstrates how a denormalized dataset can be explored to derive meaningful insights about track performance, artist popularity, album characteristics, and platform-level engagement.<br>
 By applying:<br>
 • CTEs<br>
