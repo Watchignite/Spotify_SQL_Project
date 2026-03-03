@@ -238,7 +238,67 @@ To improve query performance, we carried out the following optimization process:
 - **Advanced Querying**: Dive deeper into query optimization and explore the performance of SQL queries on larger datasets.
 
 ---
+##✅ Findings & Conclusion
+###📌 Findings
+1. Track Performance Insights <br>
+Several tracks crossed 1 billion+ streams, indicating highly viral and globally popular songs. <br>
+The top energy tracks are clustered mostly within electronic/pop genres, showing a positive correlation between energy and popularity. <br>
+Tracks with high views and likes are frequently associated with official video releases, confirming that video availability boosts engagement. <br>
 
+2. Artist & Album Trends <br>
+Some artists consistently dominate streaming metrics, with albums producing multiple high-performing tracks. <br>
+Many albums categorized as singles show higher individual engagement, aligning with current industry trends where singles outperform full albums. <br>
+
+3. Audio Feature Relationships <br>
+Tracks with higher danceability and tempo tend to achieve better performance. <br>
+Songs with very high liveness (> average) are rare, indicating that most tracks are studio-produced rather than live recordings. <br>
+The energy–liveness gap varied significantly across albums, showing diversity in production styles between albums. <br>
+
+4. Platform Preference Analysis <br>
+Using the Most_Played_On comparison: <br>
+Several tracks performed better on Spotify than YouTube. <br>
+Some tracks showed the reverse trend, especially those with strong video-centric appeal. <br>
+This highlights a platform-dependent consumption pattern. <br>
+
+5. Window & Ranking Analysis <br>
+The top 3 most-viewed tracks per artist show: <br>
+A small number of tracks generate the majority of views. <br>
+This follows a long-tail distribution, common in music platforms. <br>
+
+6. Query Optimization Findings <br>
+Before indexing (artist column): <br>
+Query execution time was 7 ms. <br>
+
+After index creation: <br>
+Execution time dropped to 0.153 ms, showing a ~45x performance improvement <br>
+This confirms the effectiveness of indexing for filtering workloads. <br>
+
+---
+###📌 Conclusion
+The Spotify SQL project demonstrates how a denormalized dataset can be explored to derive meaningful insights about track performance, artist popularity, album characteristics, and platform-level engagement.<br>
+By applying:<br>
+• CTEs<br>
+• Aggregations<br>
+• Window functions<br>
+• Subqueries<br>
+• Query optimization<br>
+We were able to extract complex patterns efficiently.<br>
+The project shows that:<br>
+1. High-energy, high-danceability tracks perform better globally.<br>
+2. Singles outperform album-based releases in many cases.<br>
+3. Platform preference varies, highlighting user behavior differences between Spotify and YouTube.<br>
+4. Indexes significantly improve query performance, essential for large datasets.<br>
+Overall, the project reflects strong SQL skills in:<br>
+• Data exploration<br>
+• Data analysis<br>
+• Performance tuning<br>
+and demonstrates the importance of clean database design and optimization in real-world analytics tasks.<br>
 ## Contributing
 If you would like to contribute to this project, feel free to fork the repository, submit pull requests, or raise issues.
 
+## 👨‍💻 Author — Kothur Charan Reddy - STUDENT 
+This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+
+💼 LinkedIn Profile : [Charan Kothur](https://www.linkedin.com/in/charankothur/)
+
+## 💡 Thanks for checking out the project! Your support means a lot — feel free to star ⭐ this repo or share it with someone learning SQL.🚀
