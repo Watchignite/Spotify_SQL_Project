@@ -40,7 +40,7 @@ CREATE TABLE spotify (
 ## Project Steps
 
 ### 1. Data Exploration
-Before diving into SQL, it’s important to understand the dataset thoroughly. The dataset contains attributes such as:
+Before diving into the SQL, it’s important to understand the dataset thoroughly. The dataset contains attributes such as:
 - `Artist`: The performer of the track.
 - `Track`: The name of the song.
 - `Album`: The album to which the track belongs.
